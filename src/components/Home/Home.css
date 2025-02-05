@@ -13,7 +13,7 @@ body{
   width:500px;
   flex-direction:column;
   margin-inline: auto;
-  margin-top: 20vh;
+  margin-top: 15vh;
   border-radius:10px;
 }
 .course-input{
@@ -25,7 +25,7 @@ body{
   border-radius:10px;
   box-shadow:5px 5px 10px #232323;
   background-color: white;
-  margin-block: 15px;
+  margin: 15px;
   z-index: 0;
 }
 .person-input{
@@ -37,6 +37,7 @@ body{
   border-radius:10px;
   box-shadow:5px 5px 10px #232323;
   background-color: white;
+  margin: 15px;
   z-index: 0;
 }
 .person-input:hover ~ .person-list, .person-list:hover{
@@ -50,7 +51,8 @@ body{
   border:2px solid black;
   height:0px;
   width:160px;
-  top:255px;
+  top:220px;
+  left: 280px;
   cursor: pointer;
   box-shadow:5px 5px 10px black;
   background-color: #232323;
@@ -80,7 +82,7 @@ body{
   border:2px solid black;
   height:0px;
   width:230px;
-  top:200px;
+  top:220px;
   box-shadow:5px 5px 10px black;
   background-color: #232323;
   z-index: 1;
