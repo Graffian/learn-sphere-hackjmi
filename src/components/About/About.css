@@ -1,0 +1,51 @@
+.contacts-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:30px;
+}
+.contact-app-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  box-shadow:5px 5px 10px #232323;
+  width:100%;
+  height:300px;
+  flex-direction: column;
+  gap:20px;
+}
+.github-link{
+  color:orange;
+}
+.twitter-link{
+  color:lightblue;
+}
+.instagram-link{
+  color:pink;
+}
+.linkedIn-link{
+  color:blue;
+}
+.discord-link{
+  color:blue;
+}
+li{
+  list-style-type: none;
+}
+.appIcon{
+  margin-right:20px;
+}
+.desc-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  box-shadow:5px 5px 10px #232323;
+  width:100%;
+  height:300px;
+}
+.desc-text{
+  color:white;
+}

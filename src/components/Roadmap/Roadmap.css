@@ -1,0 +1,22 @@
+.roadmap-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  flex-wrap:wrap;
+  gap:20px
+}
+.roadmap-div{
+  width:400px;
+  height:550px;
+  
+  box-shadow: 7px 7px 14px black;
+  transition: 0.10s box-shadow ease;
+}
+
+.course-desc{
+  color:black;
+}
+.path-desc{
+  color:black;
+}
