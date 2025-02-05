@@ -6,8 +6,8 @@ function Home(){
   return(
     <>
       <div className="course-div">
-        <h2>Choose What You're most interested in</h2>
-        <input ref={courseInputRef} className="course-input" placeholder ="enter the exam you are interested interested in ....." name="courses"/>
+        <h2>Choose the Exam of your choice...</h2>
+        <input ref={courseInputRef} className="course-input" placeholder ="enter the exam..." name="courses"/>
         <div className="course-list">
           <ul>
             <li onClick={()=>{courseInputRef.current.value="Jee Main"}}>JEE MAIN</li>
@@ -17,10 +17,10 @@ function Home(){
             <li onClick={()=>{courseInputRef.current.value="ICSE 10th BOARDS"}}>ICSE BOARDS(10)</li>
             <li onClick={()=>{courseInputRef.current.value="CBSE 10th BOARDS"}}>CBSE BOARDS(10)</li>
             <li onClick={()=>{courseInputRef.current.value="ICSE 12th BOARDS"}}>ICSE BOARDS(12)</li>
-            <li onClick={()=>{courseInputRef.current.value="CBSE 12th BOARDS"}}>CBSE BOARDS (12)</li>
+            <li onClick={()=>{courseInputRef.current.value="CBSE 12th BOARDS"}}>CBSE BOARDS(12)</li>
           </ul>
         </div>
-           <input ref={personInputRef} className="person-input" placeholder ="enroll as....."/>
+           <input ref={personInputRef} className="person-input" placeholder ="enroll as..."/>
            <div className="person-list">
           <ul>
             <li onClick={()=>{personInputRef.current.value="Teacher"}}>TEACHER</li>

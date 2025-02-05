@@ -3,7 +3,7 @@ import Course from "./components/Courses/Courses.js"
 import Roadmap from "./components/Roadmap/Roadmap.js"
 import About from "./components/About/About.js"
 import {Routes,Route,useNavigate} from "react-router-dom"
-import styles from "./app.css"
+import styles from "./app2.css"
 function App() {
   const navigate = useNavigate()
   
