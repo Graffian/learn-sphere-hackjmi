@@ -4,12 +4,14 @@
   align-items: center;
   flex-direction:row;
   flex-wrap:wrap;
-  gap:20px
+  gap:40px;
 }
 .roadmap-div{
   width:400px;
   height:550px;
-  
+  margin: 50px;
+  padding: 20px;
+  border-radius: 15px;
   box-shadow: 7px 7px 14px black;
   transition: 0.10s box-shadow ease;
 }
