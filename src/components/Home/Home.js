@@ -1,8 +1,18 @@
 import styles from "./Home.css"
 import {useState,useRef} from "react"
+import {useNavigate} from "react-router-dom"
 function Home(){
   const courseInputRef = useRef()
   const personInputRef = useRef()
+  const navigate = useNavigate()
+  const [errorMsg,setErrorMsg] = useState("")
+  function handleEnterBtn(){
+    if (courseInputRef.current.value!="" && personInputRef.current.value!=""){
+      navigate(`/courses/${courseInputRef.current.value}/${personInputRef.current.value}`)
+    }else {
+      setErrorMsg("enter both the fields then press enter")
+    }
+  }
   return(
     <>
       <div className="course-div">
@@ -28,7 +38,8 @@ function Home(){
             <li onClick={()=>{personInputRef.current.value="Tutor"}}>TUTOR</li>
           </ul>
         </div>
-        <button className="enter-button">ENTER</button>
+        <button onClick={handleEnterBtn} className="enter-button">ENTER</button>
+        <p style={{"color":"red"}}>{errorMsg}</p>
       </div>
     </>
     )
