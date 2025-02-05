@@ -37,7 +37,7 @@ Meet Eligibility Criteria ➡ Understand Exam Pattern & Syllabus ➡ Build Stron
       </div>
       <div className="roadmap-div">
         <img className="course-img" src={Ias} alt="Ias LOGO"/>
-        <h2>COURSE : NDA</h2>
+        <h2>COURSE : UPSC</h2>
         <p className="course-desc"><b>DESCRIPTION: </b>
 The Indian Administrative Service (IAS) exam, officially called the UPSC Civil Services Examination (CSE), is a national-level exam conducted by the Union Public Service Commission (UPSC). It selects candidates for prestigious government positions, including IAS, IPS, and IFS. The exam has three stages: Prelims, Mains, and Interview.
 </p>
