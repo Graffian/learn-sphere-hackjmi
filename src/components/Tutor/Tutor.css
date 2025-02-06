@@ -1,0 +1,52 @@
+.tutorInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: #232323;
+    box-shadow: 5px 5px 10px black;
+    width:50vw;
+    margin-inline:auto;
+    margin-top:20vh;
+    min-height: 45vh;
+    gap: 100px;
+    border-radius: 15px;
+}
+.tutor-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 40px;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.price-text{
+    color:white;
+    font-size: 2em;
+}
+.negotiateBtn{
+    color:white;
+    background-color: steelblue;
+    padding:10px;
+    border-radius: 10px;
+}
+.requestBtn{
+    color:white;
+    background-color: steelblue;
+    padding: 10px;
+    border-radius: 15px;
+}
+.requestBtn:hover{
+    background-color: skyblue;
+}
+.negotiateBtn:hover{
+    background-color: skyblue;
+}
+.userIcon{
+    font-size: 2em;
+}
