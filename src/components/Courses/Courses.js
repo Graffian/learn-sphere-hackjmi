@@ -33,47 +33,47 @@ function Course(){
       <div className="tutor-hire-div">
         <div onClick={()=>{navigate(`/tutor/1`)}} className="tutor-1">
           <span>
-          <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
-          <p className="tutor-name"><b>ADITYA SINGH</b></p>
-          <p style={{color:"white"}}>6KM AWAY (prefers offline)</p>
-          <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
-          <p style={{color:"white"}}><b>Rs 500/day</b></p>
+            <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
+            <p className="tutor-name"><b>ADITYA SINGH</b></p>
+            <p style={{color:"white"}}>6KM AWAY (prefers offline)</p>
+            <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+            <p style={{color:"white"}}><b>Rs 500/day</b></p>
           </span>
         </div>
         <div onClick={()=>{navigate("/tutor/2")}} className="tutor-2">
-        <span>
-          <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
-          <p className="tutor-name"><b>RYAN CHAKRABORTY</b></p>
-          <p style={{color:"white"}}>8KM AWAY (prefers offline)</p>
-          <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
-          <p style={{color:"white"}}><b>Rs 300/day</b></p>
+          <span>
+            <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
+            <p className="tutor-name"><b>RYAN CHAKRABORTY</b></p>
+            <p style={{color:"white"}}>8KM AWAY (prefers offline)</p>
+            <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+            <p style={{color:"white"}}><b>Rs 300/day</b></p>
           </span>
         </div>
         <div onClick={()=>{navigate("/tutor/3")}} className="tutor-3">
-        <span>
-          <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
-          <p className="tutor-name"><b>ANKIT TIWARI</b></p>
-          <p style={{color:"white"}}>10KM AWAY (prefers online)</p>
-          <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
-          <p style={{color:"white"}}><b>Rs 350/day</b></p>
+          <span>
+            <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
+            <p className="tutor-name"><b>ANKIT TIWARI</b></p>
+            <p style={{color:"white"}}>10KM AWAY (prefers online)</p>
+            <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+            <p style={{color:"white"}}><b>Rs 350/day</b></p>
           </span>
         </div>
         <div onClick={()=>{navigate("/tutor/4")}} className="tutor-4">
           <span>
-          <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
-          <p className="tutor-name"><b>ANURAG KASHYAP</b></p>
-          <p style={{color:"white"}}>15KM AWAY (prefers online)</p>
-          <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
-          <p style={{color:"white"}}><b>Rs 100/day</b></p>
+            <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
+            <p className="tutor-name"><b>ANURAG KASHYAP</b></p>
+            <p style={{color:"white"}}>15KM AWAY (prefers online)</p>
+            <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+            <p style={{color:"white"}}><b>Rs 100/day</b></p>
           </span>
         </div>
         <div onClick={()=>{navigate("/tutor/5")}} className="tutor-5">
-        <span>
-          <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
-          <p className="tutor-name"><b>AYUSH PANDA</b></p>
-          <p style={{color:"white"}}>20KM AWAY (prefers online)</p>
-          <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
-          <p style={{color:"white"}}><b>Rs 200/day</b></p>
+          <span>
+            <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
+            <p className="tutor-name"><b>AYUSH PANDA</b></p>
+            <p style={{color:"white"}}>20KM AWAY (prefers online)</p>
+            <p className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+            <p style={{color:"white"}}><b>Rs 200/day</b></p>
           </span>
         </div>
       </div>
