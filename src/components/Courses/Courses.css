@@ -5,35 +5,35 @@
   align-items: center;
   flex-direction: column;
   z-index:1;
-  width:100%;
-  min-height:34em;
+  width:100vw;
+  min-height:30em;
   /* gap:30px; */
   background-color:#232323;
-  box-shadow: 5px 5px 10px black;
+  /* box-shadow: 5px 5px 10px black; */
 }
 .tutor-1{
-  margin-top:30px;
-  min-height:7em;
+  /* margin-top:30px; */
+  min-height:6em;
   width:100%;
   border-top:2px solid white;
 }
 .tutor-2{
-  min-height:7em;
+  min-height:6em;
   width:100%;
   border-top:2px solid white;
 }
 .tutor-3{
-  min-height:7em;
+  min-height:6em;
   width:100%;
   border-top:2px solid white;
 }
 .tutor-4{
-  min-height:7em;
+  min-height:6em;
   width:100%;
   border-top:2px solid white;
 }
 .tutor-5{
-  min-height:7em;
+  min-height:6em;
   width:100%;
   border-top:2px solid white;
 }
@@ -51,6 +51,7 @@ span{
   justify-content: center;
   align-items: center;
   gap:30px;
+  height: max-content;
 }
 .starIcon{
   color:gold;
