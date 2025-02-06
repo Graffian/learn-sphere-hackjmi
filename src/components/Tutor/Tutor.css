@@ -1,21 +1,22 @@
 .tutorInfo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-flow: row wrap;
     background-color: #232323;
     box-shadow: 5px 5px 10px black;
-    width:50vw;
+    width:60vw;
     margin-inline:auto;
     margin-top:20vh;
     min-height: 45vh;
-    gap: 100px;
+    /* gap: 100px; */
     border-radius: 15px;
 }
 .tutor-text{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* font-size: 2em; */
     flex-flow: column wrap;
     gap: 40px;
 }
@@ -24,6 +25,7 @@ span{
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+    font-style: inherit;
 }
 .price-text{
     color:white;
@@ -39,7 +41,7 @@ span{
     color:white;
     background-color: steelblue;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .requestBtn:hover{
     background-color: skyblue;

@@ -12,9 +12,9 @@ function App() {
     <>
        <nav className="nav-bar">
         
-        <div className="nav-left">
+        {/* <div className="nav-left">
           
-        </div>
+        </div> */}
         <div className="nav-centre">
           <p className="title-para">LEARN SPHERE</p>
         </div>
