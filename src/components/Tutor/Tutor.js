@@ -14,10 +14,12 @@ function Tutor(){
       <FontAwesomeIcon icon={faUser} />
       </div>
       <div className="tutor-text">
-        <p style={{color:"white"}}><b>NAME</b></p>
+        <p style={{color:"white", fontSize:"1.5em"}}><b>NAME</b></p>
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
-       <span><button className="negotiateBtn">NEGOTIATE</button>
-       <button className="requestBtn">REQUEST</button></span> 
+        <span>
+          <button className="negotiateBtn">NEGOTIATE</button>
+          <button className="requestBtn">REQUEST</button>
+        </span>
       </div>
       <div className="tutor-price">
         <p className="price-text">$200</p>
