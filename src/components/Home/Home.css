@@ -51,7 +51,7 @@ body{
   border:2px solid black;
   height:0px;
   width:160px;
-  top:220px;
+  top:205px;
   left: 280px;
   cursor: pointer;
   box-shadow:5px 5px 10px black;
@@ -82,7 +82,7 @@ body{
   border:2px solid black;
   height:0px;
   width:230px;
-  top:220px;
+  top:205px;
   box-shadow:5px 5px 10px black;
   background-color: #232323;
   z-index: 1;
