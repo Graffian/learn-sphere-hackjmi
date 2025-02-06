@@ -7,7 +7,7 @@ function Home(){
   const navigate = useNavigate()
   const [errorMsg,setErrorMsg] = useState("")
   function handleEnterBtn(){
-    if (courseInputRef.current.value!="" && personInputRef.current.value!=""){
+    if (courseInputRef.current.value!="" && personInputRef.current.value=="Student"){
       navigate(`/courses/${courseInputRef.current.value}/${personInputRef.current.value}`)
     }else {
       setErrorMsg("enter both the fields then press enter")

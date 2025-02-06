@@ -1,5 +1,5 @@
 import {useEffect,useState} from "react"
-import {useParams} from "react-router-dom"
+import {useParams , useNavigate} from "react-router-dom"
 import Map from "../../map.js"
 import styles from "./Courses.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,6 +8,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 function Course(){
   const params = useParams()
+  const navigate = useNavigate()
   const [latitude,setLatitude] = useState(null)
   const [longitude,setLongitude]=useState(null)
   const [erroMsg,setErrorMsg] = useState("")
@@ -24,14 +25,13 @@ function Course(){
     }
       },[latitude])
 
-  
+    
   return(
     <>
       {latitude!=null?(<Map  longitude={longitude}  latitude={latitude}/>):(<p>LOADING!! PLEASE Wait for 5sec and  Refresh the page</p>)}
       {latitude==null?(<p style={{color:"red"}}>{erroMsg}</p>):null}
       <div className="tutor-hire-div">
-        
-        <div className="tutor-1">
+        <div onClick={()=>{navigate(`/tutor/1`)}} className="tutor-1">
           <span>
           <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
           <p className="tutor-name"><b>ADITYA SINGH</b></p>
@@ -40,7 +40,7 @@ function Course(){
           <p style={{color:"white"}}><b>Rs 500/day</b></p>
           </span>
         </div>
-        <div className="tutor-2">
+        <div onClick={()=>{navigate("/tutor/2")}} className="tutor-2">
         <span>
           <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
           <p className="tutor-name"><b>RYAN CHAKRABORTY</b></p>
@@ -49,7 +49,7 @@ function Course(){
           <p style={{color:"white"}}><b>Rs 300/day</b></p>
           </span>
         </div>
-        <div className="tutor-3">
+        <div onClick={()=>{navigate("/tutor/3")}} className="tutor-3">
         <span>
           <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
           <p className="tutor-name"><b>ANKIT TIWARI</b></p>
@@ -58,7 +58,7 @@ function Course(){
           <p style={{color:"white"}}><b>Rs 350/day</b></p>
           </span>
         </div>
-        <div className="tutor-4">
+        <div onClick={()=>{navigate("/tutor/4")}} className="tutor-4">
           <span>
           <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
           <p className="tutor-name"><b>ANURAG KASHYAP</b></p>
@@ -67,7 +67,7 @@ function Course(){
           <p style={{color:"white"}}><b>Rs 100/day</b></p>
           </span>
         </div>
-        <div className="tutor-5">
+        <div onClick={()=>{navigate("/tutor/5")}} className="tutor-5">
         <span>
           <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
           <p className="tutor-name"><b>AYUSH PANDA</b></p>
