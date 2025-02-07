@@ -77,6 +77,25 @@ function Course(){
           </span>
         </div>
       </div>
+      <div className="teacher-hire-div">
+          <div style={{color:"white"}} className="teacher-0">
+            <img src="https://placehold.co/500x200" alt="teacher-img"/>
+            <span className="userIcon">
+              
+              <FontAwesomeIcon icon={faUser}/>
+              
+            </span>
+            <p style={{color:"white"}} className="name-text"><b>NAME:ADITYA GUPTA</b></p>
+            <span className="stars-nd-shit">
+              <p style={{color:"white"}} className="course-text"><b>COURSE:PHYSICS (JEE)</b></p>
+              <p style={{color:"yellow"}} className="star-icon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+              <p className="price-text">Rs 2000</p>
+            </span>
+            <span className="description-text">
+              <p><b>DESCRIPTION: Highly proffessional in physics and ex fiitjee and allen faculty Btech from nit RKL</b></p>
+            </span>
+          </div>
+      </div>
     </>
     )
 }

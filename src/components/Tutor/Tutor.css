@@ -52,3 +52,17 @@ span{
 .userIcon{
     font-size: 2em;
 }
+.range-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 2em;
+}
+.start-input{
+    outline: none;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    margin-inline: 20px;
+}
