@@ -31,7 +31,7 @@ function Course(){
       {latitude!=null?(<Map  longitude={longitude}  latitude={latitude}/>):(<p>LOADING!! PLEASE Wait for 5sec and  Refresh the page</p>)}
       {latitude==null?(<p style={{color:"red"}}>{erroMsg}</p>):null}
       <div className="tutor-hire-div">
-        <div onClick={()=>{navigate(`/tutor/1`)}} className="tutor-1">
+        <div onClick={()=>{navigate(`/tutor/1`)}} className="tutor-0">
           <span>
             <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
             <p className="tutor-name"><b>ADITYA SINGH</b></p>
@@ -40,7 +40,7 @@ function Course(){
             <p style={{color:"white"}}><b>Rs 500/day</b></p>
           </span>
         </div>
-        <div onClick={()=>{navigate("/tutor/2")}} className="tutor-2">
+        <div onClick={()=>{navigate("/tutor/2")}} className="tutor-0">
           <span>
             <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
             <p className="tutor-name"><b>RYAN CHAKRABORTY</b></p>
@@ -49,7 +49,7 @@ function Course(){
             <p style={{color:"white"}}><b>Rs 300/day</b></p>
           </span>
         </div>
-        <div onClick={()=>{navigate("/tutor/3")}} className="tutor-3">
+        <div onClick={()=>{navigate("/tutor/3")}} className="tutor-0">
           <span>
             <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
             <p className="tutor-name"><b>ANKIT TIWARI</b></p>
@@ -58,7 +58,7 @@ function Course(){
             <p style={{color:"white"}}><b>Rs 350/day</b></p>
           </span>
         </div>
-        <div onClick={()=>{navigate("/tutor/4")}} className="tutor-4">
+        <div onClick={()=>{navigate("/tutor/4")}} className="tutor-0">
           <span>
             <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
             <p className="tutor-name"><b>ANURAG KASHYAP</b></p>
@@ -67,7 +67,7 @@ function Course(){
             <p style={{color:"white"}}><b>Rs 100/day</b></p>
           </span>
         </div>
-        <div onClick={()=>{navigate("/tutor/5")}} className="tutor-5">
+        <div onClick={()=>{navigate("/tutor/5")}} className="tutor-0">
           <span>
             <p className="userIcon"><FontAwesomeIcon icon={faUser} /></p>
             <p className="tutor-name"><b>AYUSH PANDA</b></p>
@@ -79,20 +79,82 @@ function Course(){
       </div>
       <div className="teacher-hire-div">
           <div style={{color:"white"}} className="teacher-0">
-            <img src="https://placehold.co/500x200" alt="teacher-img"/>
+            <img style={{borderRadius: "10px 10px 0px 0px"}}src="https://placehold.co/500x200" alt="teacher-img"/>
             <span className="userIcon">
-              
               <FontAwesomeIcon icon={faUser}/>
-              
             </span>
-            <p style={{color:"white"}} className="name-text"><b>NAME:ADITYA GUPTA</b></p>
+            <p style={{color:"white"}} className="paraType1 name-text"><b>TEACHER: PANKAJ CHAUBEY</b></p>
             <span className="stars-nd-shit">
-              <p style={{color:"white"}} className="course-text"><b>COURSE:PHYSICS (JEE)</b></p>
-              <p style={{color:"yellow"}} className="star-icon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
-              <p className="price-text">Rs 2000</p>
+              <p style={{color:"white", maxWidth:"174px"}} className="paraType1 course-text"><b>COURSE:</b> Physics (JEE)</p>
+              <p style={{color:"yellow"}} className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+              <p className="price-text"><b>Rs 3000</b></p>
             </span>
-            <span className="description-text">
-              <p><b>DESCRIPTION: Highly proffessional in physics and ex fiitjee and allen faculty Btech from nit RKL</b></p>
+            <span className="description-text" style={{paddingInline: "20px"}}>
+              <p><b>DESCRIPTION:</b> Highly enthusiastic and accomplished teacher, ex-FIITJEE senior faculty, BTech. (IIT Bombay)</p>
+            </span>
+          </div>
+
+          <div style={{color:"white"}} className="teacher-0">
+            <img style={{borderRadius: "10px 10px 0px 0px"}}src="https://placehold.co/500x200" alt="teacher-img"/>
+            <span className="userIcon">
+              <FontAwesomeIcon icon={faUser}/>
+            </span>
+            <p style={{color:"white"}} className="paraType1 name-text"><b>TEACHER: DR. JAGJEET SINGH</b></p>
+            <span className="stars-nd-shit">
+              <p style={{color:"white", maxWidth:"174px"}} className="paraType1 course-text"><b>COURSE:</b> Physical Chemistry (JEE)</p>
+              <p style={{color:"yellow"}} className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+              <p className="price-text"><b>Rs 2500</b></p>
+            </span>
+            <span className="description-text" style={{paddingInline: "20px"}}>
+              <p><b>DESCRIPTION:</b> Highly enthusiastic and accomplished teacher, MTech. (IIT Guwahati), PhD. (ETH Zurich)</p>
+            </span>
+          </div>
+
+          <div style={{color:"white"}} className="teacher-0">
+            <img style={{borderRadius: "10px 10px 0px 0px"}}src="https://placehold.co/500x200" alt="teacher-img"/>
+            <span className="userIcon">
+              <FontAwesomeIcon icon={faUser}/>
+            </span>
+            <p style={{color:"white"}} className="paraType1 name-text"><b>TEACHER: R CHINNASWAMY</b></p>
+            <span className="stars-nd-shit">
+              <p style={{color:"white", maxWidth:"174px"}} className="paraType1 course-text"><b>COURSE:</b> Organic Chemistry (JEE)</p>
+              <p style={{color:"yellow"}} className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+              <p className="price-text"><b>Rs 2000</b></p>
+            </span>
+            <span className="description-text" style={{paddingInline: "20px"}}>
+              <p><b>DESCRIPTION:</b> Highly enthusiastic and accomplished teacher, ex-PW & ex-Unacademy senior faculty, BTech. (NIT Trichy) </p>
+            </span>
+          </div>
+
+          <div style={{color:"white"}} className="teacher-0">
+            <img style={{borderRadius: "10px 10px 0px 0px"}}src="https://placehold.co/500x200" alt="teacher-img"/>
+            <span className="userIcon">
+              <FontAwesomeIcon icon={faUser}/>
+            </span>
+            <p style={{color:"white"}} className="paraType1 name-text"><b>TEACHER: VINEET SEHGAL</b></p>
+            <span className="stars-nd-shit">
+            <p style={{color:"white", maxWidth:"174px"}} className="paraType1 course-text"><b>COURSE:</b> Inorganic Chemistry (JEE)</p>
+              <p style={{color:"yellow"}} className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+              <p className="price-text"><b>Rs 2750</b></p>
+            </span>
+            <span className="description-text" style={{paddingInline: "20px"}}>
+              <p><b>DESCRIPTION:</b> Highly enthusiastic and accomplished teacher, ex-Aakash senior faculty, BTech. (IIT Kanpur)</p>
+            </span>
+          </div>
+
+          <div style={{color:"white"}} className="teacher-0">
+            <img style={{borderRadius: "10px 10px 0px 0px"}}src="https://placehold.co/500x200" alt="teacher-img"/>
+            <span className="userIcon">
+              <FontAwesomeIcon icon={faUser}/>
+            </span>
+            <p style={{color:"white"}} className="paraType1 name-text"><b>TEACHER: SOUMYA DUTTA</b></p>
+            <span className="stars-nd-shit">
+              <p style={{color:"white", maxWidth:"174px"}} className="paraType1 course-text"><b>COURSE:</b> Physics (JEE)</p>
+              <p style={{color:"yellow"}} className="starIcon"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
+              <p className="price-text"><b>Rs 3000</b></p>
+            </span>
+            <span className="description-text" style={{paddingInline: "20px"}}>
+              <p><b>DESCRIPTION:</b> Highly enthusiastic and accomplished teacher, ex-Bansal faculty, BTech. (NIT Durgapur)</p>
             </span>
           </div>
       </div>

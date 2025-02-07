@@ -11,28 +11,8 @@
   background-color:#232323;
   /* box-shadow: 5px 5px 10px black; */
 }
-.tutor-1{
+.tutor-0{
   /* margin-top:30px; */
-  min-height:6em;
-  width:100%;
-  border-top:2px solid white;
-}
-.tutor-2{
-  min-height:6em;
-  width:100%;
-  border-top:2px solid white;
-}
-.tutor-3{
-  min-height:6em;
-  width:100%;
-  border-top:2px solid white;
-}
-.tutor-4{
-  min-height:6em;
-  width:100%;
-  border-top:2px solid white;
-}
-.tutor-5{
   min-height:6em;
   width:100%;
   border-top:2px solid white;
@@ -48,51 +28,42 @@
 }
 span{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap:30px;
   height: max-content;
 }
 .starIcon{
   color:gold;
+  white-space: nowrap;
 }
-.tutor-1:hover{
-  background-color: #d23a3a;
-}
-.tutor-2:hover{
-  background-color: #d23a3a;
-}
-.tutor-3:hover{
-  background-color: #d23a3a;
-}
-.tutor-4:hover{
-  background-color: #d23a3a;
-}
-.tutor-5:hover{
+.tutor-0:hover{
   background-color: #d23a3a;
 }
 .teacher-hire-div{
   display: flex;
   flex-flow: row wrap;
-  
-
+  justify-content: center;
 }
 .teacher-0{
-  
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
+  max-width: 500px;
   height: 600px;
+  margin: 50px;
   box-shadow: 5px 5px 10px black;
   border-radius: 10px;
   background-color:#232323;
-  
 }
 .stars-nd-shit{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-flow:row;
+  padding-inline: 15px;
+}
+.paraType1{
+  margin-bottom: 0;
 }
