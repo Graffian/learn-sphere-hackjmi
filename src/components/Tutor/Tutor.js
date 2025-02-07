@@ -1,10 +1,13 @@
 import {useParams} from "react-router-dom"
 import styles from "./Tutor.css"
+import {useState} from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 function Tutor(){
+  let x = 0
   const params = useParams()
+  const [condition,setCondition]=useState(false)
   console.log(params.id)
   function tutorInfo(){
     if(params.id==1){
@@ -17,7 +20,7 @@ function Tutor(){
         <p style={{color:"white", fontSize:"1.5em"}}><b>ADITYA SINGH</b></p>
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
-          <button className="negotiateBtn">NEGOTIATE</button>
+          <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
           <button className="requestBtn">REQUEST</button>
         </span>
       </div>
@@ -36,7 +39,7 @@ function Tutor(){
         <p style={{color:"white", fontSize:"1.5em"}}><b>RYAN CHAKRABORTY</b></p>
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
-          <button className="negotiateBtn">NEGOTIATE</button>
+          <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
           <button className="requestBtn">REQUEST</button>
         </span>
       </div>
@@ -56,7 +59,7 @@ function Tutor(){
         <p style={{color:"white", fontSize:"1.5em"}}><b>ANKIT TIWARI</b></p>
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
-          <button className="negotiateBtn">NEGOTIATE</button>
+          <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
           <button className="requestBtn">REQUEST</button>
         </span>
       </div>
@@ -75,7 +78,7 @@ function Tutor(){
         <p style={{color:"white", fontSize:"1.5em"}}><b>ANURAG KASHYAP</b></p>
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
-          <button className="negotiateBtn">NEGOTIATE</button>
+          <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
           <button className="requestBtn">REQUEST</button>
         </span>
       </div>
@@ -94,7 +97,7 @@ function Tutor(){
         <p style={{color:"white", fontSize:"1.5em"}}><b>AYUSH PANDA</b></p>
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
-          <button className="negotiateBtn">NEGOTIATE</button>
+          <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
           <button className="requestBtn">REQUEST</button>
         </span>
       </div>
@@ -103,11 +106,20 @@ function Tutor(){
       </div> 
     </div>
     )
-    }
   }
+  }
+
+ 
   return(
     <>
     {tutorInfo()}
+    {condition==true?(
+      <div className="range-div">
+      <input  className="start-input" type="number" placeholder="Set Minimum Price"/>
+      to
+      <input className="start-input" type="number" placeholder="Set Maximum Price"/>
+      </div>
+    ):null}
     </>
     )
 }

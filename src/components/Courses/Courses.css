@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   z-index:1;
-  width:100vw;
+  width:100%;
   min-height:30em;
   /* gap:30px; */
   background-color:#232323;
@@ -70,4 +70,29 @@ span{
 }
 .tutor-5:hover{
   background-color: #d23a3a;
+}
+.teacher-hire-div{
+  display: flex;
+  flex-flow: row wrap;
+  
+
+}
+.teacher-0{
+  
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  background-color:#232323;
+  
+}
+.stars-nd-shit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row;
 }

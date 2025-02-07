@@ -12,6 +12,7 @@
 .title-para , .nav-para{
   color:yellow;
   position: relative;
+  cursor: pointer;
   
 }
  .title-para::after , .nav-para::after{
@@ -26,6 +27,7 @@
 }
 .title-para:hover::after , .nav-para:hover::after{
   width:100%;
+  
 }
 
 .nav-right{
