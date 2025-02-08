@@ -11,7 +11,8 @@ function Home(){
       navigate(`/courses/${courseInputRef.current.value}/${personInputRef.current.value}`)
     }else if (courseInputRef.current.value !="" && personInputRef.current.value == "Teacher"){
       navigate(`/courses/${courseInputRef.current.value}/${personInputRef.current.value}`)
-    }
+    }else if (courseInputRef.current.value !="" && personInputRef.current.value == "Tutor"){
+      navigate(`/courses/${courseInputRef.current.value}/${personInputRef.current.value}`)}
     else {
       setErrorMsg("enter both the fields then press enter")
     }

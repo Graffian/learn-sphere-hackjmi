@@ -1,0 +1,30 @@
+.teacher-check{
+  margin-top:40%;
+  display: flex;
+  align-items: center;
+  height:25em;
+  margin-inline: auto;
+  width:30em;
+  box-shadow: 5px 5px 10px black;
+}
+.teacher-name-input{
+  padding:10px;
+  border:none;
+  outline: none;
+  box-shadow: 5px 5px 10px black;
+}
+.teacher-number-input{
+  padding:10px;
+  border:none;
+  outline: none;
+  box-shadow: 5px 5px 10px black;
+}
+.verification-cam{
+  background-color: green;
+  color:white;
+  padding: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+.verification-cam:hover{
+  background-color: #59ea1a;
+}
