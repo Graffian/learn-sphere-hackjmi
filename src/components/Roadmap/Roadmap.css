@@ -7,15 +7,20 @@
   gap:40px;
 }
 .roadmap-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width:400px;
-  height:550px;
+  height:600px;
   margin: 50px;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 7px 7px 14px black;
   transition: 0.10s box-shadow ease;
 }
-
+.roadmap-div img{
+  margin-inline: auto;
+}
 .course-desc{
   color:black;
   
@@ -35,6 +40,7 @@
 }
 a{
   text-decoration: none;
+  color:white;
 }
 a:visited{
   color:white;

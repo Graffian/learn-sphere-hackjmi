@@ -1,29 +1,37 @@
 .teacher-check{
-  margin-top:40%;
+  margin-top:20vh;
   display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  gap: 30px;
   align-items: center;
-  height:25em;
+  min-height:25em;
   margin-inline: auto;
-  width:30em;
-  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  width:35em;
+  padding: 30px;
+  box-shadow: 5px 5px 10px #232323;
 }
 .teacher-name-input{
   padding:10px;
   border:none;
   outline: none;
-  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #232323;
 }
 .teacher-number-input{
   padding:10px;
   border:none;
   outline: none;
-  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #232323;
 }
 .verification-cam{
   background-color: green;
+  border-radius: 10px;
   color:white;
   padding: 10px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px #232323;
 }
 .verification-cam:hover{
   background-color: #59ea1a;

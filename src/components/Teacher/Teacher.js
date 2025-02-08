@@ -16,9 +16,10 @@ function Teacher(){
           <input className="certificate-input" type="file" placeholder="choose certificates"/>
           <button onClick={()=>{setVerify(true)}} className="verification-cam">Verify</button>
         </span>
-      </div>
-      
-               {!verify?null:( <Webcam style={{width:"450px", height:"300px"}} />)}
+        <span className="video-verif">
+          {!verify?null:( <Webcam style={{width:"450px", height:"300px"}} />)}
+        </span>
+      </div>         
     </>
     )
 }
