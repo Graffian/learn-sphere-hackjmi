@@ -7,7 +7,9 @@ import Icse10 from "../Images/Icse10.jpg"
 import Cbse from "../Images/Cbse.jpeg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import {useNavigate} from "react-router-dom"
 function Roadmap(){
+  const navigate = useNavigate()
   return(
     <nav className="roadmap-wrapper">
       <div className="roadmap-div">
@@ -17,6 +19,7 @@ function Roadmap(){
 JEE Main is a national-level entrance exam in India for admission to top engineering colleges like NITs, IIITs, and CFTIs. It also serves as a qualifying exam for JEE Advanced, required for admission to IITs.
 </p>
 <p className="path-desc"><b>PATH: </b>Understand Syllabus & Pattern<FontAwesomeIcon icon={faArrowRight} />Create Study Plan<FontAwesomeIcon icon={faArrowRight} />Master NCERT Concepts<FontAwesomeIcon icon={faArrowRight} />Solve Previous Year Papers<FontAwesomeIcon icon={faArrowRight} />Take Mock Tests<FontAwesomeIcon icon={faArrowRight} />Analyze & Improve<FontAwesomeIcon icon={faArrowRight} />Focus on Weak Areas<FontAwesomeIcon icon={faArrowRight} />Revise Regularly<FontAwesomeIcon icon={faArrowRight} />Practice Time Management<FontAwesomeIcon icon={faArrowRight} />Stay Confident</p>
+<button className="pyqBtn"><a href="https://jeemain.nta.nic.in/">Download Pyqs for reference</a></button>
       </div>
       
       
@@ -25,7 +28,8 @@ JEE Main is a national-level entrance exam in India for admission to top enginee
         <h2>COURSE : NEET</h2>
         <p className="course-desc"><b>DESCRIPTION: </b>
 The National Eligibility cum Entrance Test (NEET) is a national-level entrance exam in India for admission to undergraduate medical courses (MBBS, BDS, and AYUSH) in government and private medical colleges. It consists of Physics, Chemistry, and Biology sections with a total of 720 marks</p>
-<p className="path-desc"><b>PATH: </b>Understand Meet Eligibility Criteria<FontAwesomeIcon icon={faArrowRight} />Understand Exam Pattern & Syllabus<FontAwesomeIcon icon={faArrowRight} />Master NCERT for Biology, Physics & Chemistry<FontAwesomeIcon icon={faArrowRight} />Create Study Plan with Daily Targets<FontAwesomeIcon icon={faArrowRight} />Practice Previous Year Papers & Mock Tests<FontAwesomeIcon icon={faArrowRight} />Analyze Mistakes & Improve Weak Areas<FontAwesomeIcon icon={faArrowRight} />Revise Regularly<FontAwesomeIcon icon={faArrowRight} />Focus on Time Management & Accuracy<FontAwesomeIcon icon={faArrowRight} />Stay Consistent & Confident<FontAwesomeIcon icon={faArrowRight} />Appear for Exam Confidently</p>
+<p className="path-desc"><b>PATH: </b>Understand Meet Eligibility Criteria<FontAwesomeIcon icon={faArrowRight} />Understand Exam Pattern & Syllabus<FontAwesomeIcon icon={faArrowRight} />Master NCERT for Biology, Physics & Chemistry<FontAwesomeIcon icon={faArrowRight} />Create Study Plan with Daily Targets<FontAwesomeIcon icon={faArrowRight} />Practice Previous Year Papers & Mock Tests<FontAwesomeIcon icon={faArrowRight} />Analyze Mistakes & Improve Weak Areas<FontAwesomeIcon icon={faArrowRight} />Revise Regularly<FontAwesomeIcon icon={faArrowRight} />Focus on Time Management & Accuracy<FontAwesomeIcon icon={faArrowRight} />Stay Consistent & Confident</p>
+    <button className="pyqBtn"><a href="https://neet.nta.nic.in/">Download Pyqs for reference</a></button>
       </div>
       
       
@@ -38,6 +42,7 @@ The NDA exam, conducted by UPSC, selects candidates for the Army, Navy, and Air 
 <p className="path-desc"><b>PATH: </b>
 Meet Eligibility Criteria<FontAwesomeIcon icon={faArrowRight} />Understand Exam Pattern & Syllabus<FontAwesomeIcon icon={faArrowRight} />Build Strong Basics in Math, English & GK<FontAwesomeIcon icon={faArrowRight} />Create Study Plan<FontAwesomeIcon icon={faArrowRight} />Practice Previous Year Papers<FontAwesomeIcon icon={faArrowRight} />Take Mock Tests & Analyze Performance<FontAwesomeIcon icon={faArrowRight} />Focus on Weak Areas<FontAwesomeIcon icon={faArrowRight} />Improve Time Management<FontAwesomeIcon icon={faArrowRight} />Prepare for SSB Interview<FontAwesomeIcon icon={faArrowRight} />Stay Physically Fit<FontAwesomeIcon icon={faArrowRight} />Appear for Exam & Interview Confidently
 </p>
+<button className="pyqBtn"><a href="https://upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202025">Download Pyqs for reference</a></button>
       </div>
       <div className="roadmap-div">
         <img className="course-img" src={Ias} alt="Ias LOGO"/>
@@ -48,6 +53,7 @@ The Indian Administrative Service (IAS) exam, officially called the UPSC Civil S
 <p className="path-desc"><b>PATH: </b>
 Meet Eligibility Criteria<FontAwesomeIcon icon={faArrowRight} />Understand Syllabus & Pattern<FontAwesomeIcon icon={faArrowRight} />Study NCERT & Standard Books<FontAwesomeIcon icon={faArrowRight} />Stay Updated on Current Affairs<FontAwesomeIcon icon={faArrowRight} />Practice Answer Writing & Mock Tests<FontAwesomeIcon icon={faArrowRight} />Revise Regularly<FontAwesomeIcon icon={faArrowRight} />Prepare for Interview<FontAwesomeIcon icon={faArrowRight} />Appear Confidently
 </p>
+      <button className="pyqBtn"><a href="https://upsc.gov.in/">Download Pyqs for reference</a></button>
       </div>
       <div className="roadmap-div">
         <img style={{width:"400px",height:"200px"}} className="course-img" src={Icse10} alt="ICSE LOGO"/>
@@ -58,6 +64,7 @@ The Indian Certificate of Secondary Education (ICSE) Class 10 Board exams are co
 <p className="path-desc"><b>PATH: </b>
 Conceptual Clarity<FontAwesomeIcon icon={faArrowRight} />Regular Practice<FontAwesomeIcon icon={faArrowRight} />Time Management<FontAwesomeIcon icon={faArrowRight} />Previous Year Papers<FontAwesomeIcon icon={faArrowRight} />Revision and Mock Tests<FontAwesomeIcon icon={faArrowRight} />Board Exam Performance
 </p>
+    <button className="pyqBtn"><a href="https://cisce.org/">Download Pyqs for reference</a></button>
       </div>
       <div className="roadmap-div">
         <img style={{width:"400px",height:"200px"}} className="course-img" src={Cbse} alt="ICSE LOGO"/>
@@ -68,6 +75,7 @@ The Central Board of Secondary Education (CBSE) is India's national-level board 
 <p className="path-desc"><b>PATH: </b>
 NCERT Proficiency<FontAwesomeIcon icon={faArrowRight} />Objective Learning<FontAwesomeIcon icon={faArrowRight} />Sample Papers Practice<FontAwesomeIcon icon={faArrowRight} />Time Management<FontAwesomeIcon icon={faArrowRight} />Thorough Revision<FontAwesomeIcon icon={faArrowRight} />Exam Success
 </p>
+<button className="pyqBtn"><a href="https://www.cbse.gov.in/">Download Pyqs for reference</a></button>
       </div>
     </nav>
     )

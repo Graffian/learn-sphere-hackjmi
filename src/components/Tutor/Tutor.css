@@ -37,6 +37,17 @@ span{
     padding:10px;
     border-radius: 10px;
 }
+.chatBtn{
+    color:white;
+    background-color: steelblue;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.chatBtn:hover{
+    background-color: skyblue;
+}
 .requestBtn{
     color:white;
     background-color: steelblue;

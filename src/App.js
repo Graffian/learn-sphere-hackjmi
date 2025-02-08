@@ -3,6 +3,7 @@ import Course from "./components/Courses/Courses.js"
 import Roadmap from "./components/Roadmap/Roadmap.js"
 import About from "./components/About/About.js"
 import Tutor from "./components/Tutor/Tutor.js"
+import Teacher from "./components/Teacher/Teacher.js"
 import {Routes,Route,useNavigate} from "react-router-dom"
 import styles from "./app2.css"
 function App() {
@@ -28,7 +29,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/roadmaps" element={<Roadmap/>}/>
       <Route path="/about" element={<About/>}/>
-      <Route path="/courses/:exam/:person" element={<Course/>}/>
+      <Route path="/courses/:exam/Student" element={<Course/>}/>
+      <Route path="/courses/:exam/Teacher" element={<Teacher/>}/>
       <Route path="/tutor/:id" element={<Tutor/>}/>
     </Routes>
     </>

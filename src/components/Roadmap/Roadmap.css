@@ -18,7 +18,24 @@
 
 .course-desc{
   color:black;
+  
 }
 .path-desc{
   color:black;
+}
+.pyqBtn{
+  padding: 10px;
+  margin-inline: 80px;
+  background-color: green;
+  color:white;
+  box-shadow: 5px 5px 10px black;
+}
+.pyqBtn:hover{
+  background-color: #59ea1a ;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color:white;
 }

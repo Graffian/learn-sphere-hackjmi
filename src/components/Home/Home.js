@@ -9,7 +9,10 @@ function Home(){
   function handleEnterBtn(){
     if (courseInputRef.current.value!="" && personInputRef.current.value=="Student"){
       navigate(`/courses/${courseInputRef.current.value}/${personInputRef.current.value}`)
-    }else {
+    }else if (courseInputRef.current.value !="" && personInputRef.current.value == "Teacher"){
+      navigate(`/courses/${courseInputRef.current.value}/${personInputRef.current.value}`)
+    }
+    else {
       setErrorMsg("enter both the fields then press enter")
     }
   }

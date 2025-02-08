@@ -1,6 +1,6 @@
 import {useParams} from "react-router-dom"
 import styles from "./Tutor.css"
-import {useState} from "react"
+import {useState,useRef} from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
@@ -8,6 +8,8 @@ function Tutor(){
   let x = 0
   const params = useParams()
   const [condition,setCondition]=useState(false)
+  const minPriceInputRef = useRef()
+  const maxPriceInputRef = useRef()
   console.log(params.id)
   function tutorInfo(){
     if(params.id==1){
@@ -21,7 +23,7 @@ function Tutor(){
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
           <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
-          <button className="requestBtn">REQUEST</button>
+          <button className="chatBtn">CHAT</button>
         </span>
       </div>
       <div className="tutor-price">
@@ -40,7 +42,7 @@ function Tutor(){
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
           <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
-          <button className="requestBtn">REQUEST</button>
+          <button className="chatBtn">CHAT</button>
         </span>
       </div>
       <div className="tutor-price">
@@ -60,7 +62,7 @@ function Tutor(){
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
           <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
-          <button className="requestBtn">REQUEST</button>
+          <button className="chatBtn">CHAT</button>
         </span>
       </div>
       <div className="tutor-price">
@@ -79,7 +81,7 @@ function Tutor(){
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
           <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
-          <button className="requestBtn">REQUEST</button>
+          <button className="chatBtn">CHAT</button>
         </span>
       </div>
       <div className="tutor-price">
@@ -98,7 +100,7 @@ function Tutor(){
         <p style={{color:"gold"}}><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></p>
         <span>
           <button onClick={()=>setCondition(true)} className="negotiateBtn">NEGOTIATE</button>
-          <button className="requestBtn">REQUEST</button>
+          <button className="chatBtn">CHAT</button>
         </span>
       </div>
       <div className="tutor-price">
@@ -108,16 +110,20 @@ function Tutor(){
     )
   }
   }
-
+    function priceRequest(){
+      maxPriceInputRef.current.value = ""
+      minPriceInputRef.current.value = ""
+    }
  
   return(
     <>
     {tutorInfo()}
     {condition==true?(
       <div className="range-div">
-      <input  className="start-input" type="number" placeholder="Set Minimum Price"/>
+      <input ref={maxPriceInputRef} className="start-input" type="number" placeholder="Set Minimum Price"/>
       to
-      <input className="start-input" type="number" placeholder="Set Maximum Price"/>
+      <input ref={minPriceInputRef} className="start-input" type="number" placeholder="Set Maximum Price"/>
+      <button onClick={priceRequest} className="requestBtn">REQUEST</button>
       </div>
     ):null}
     </>
